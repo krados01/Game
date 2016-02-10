@@ -40,7 +40,7 @@ public class ClickToMove : MonoBehaviour
 
     void moveToPosition()
     {
-        if(Vector3.Distance(transform.position, position)<1)
+        if(Vector3.Distance(transform.position, position)>1)
         {
             Quaternion newRotation = Quaternion.LookRotation(position - transform.position, Vector3.forward);
 
